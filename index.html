@@ -1,0 +1,154 @@
+	<!doctype html>
+	<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="http://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<style>
+			img{
+				height:auto;
+				width:100%;
+			}
+		</style>
+
+		<title>Hello, world!</title>
+
+	</head>
+	<body>
+		
+
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" >
+
+			<a class="navbar-brand" href="#"><img src="img/9gj.png" style="width:45px;height:45px" class="responsive"> No.9 butler</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Service</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
+				<form class="form-inline mt-2 mt-md-0">
+					<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+
+
+		<div class="container-fluid" style="padding-top:75px">
+
+			<!--轮播图开始-->
+			<div id="demo" class="carousel slide" data-ride="carousel">
+
+				<!-- 指示符 -->
+				<ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+				</ul>
+
+				<!-- 轮播图片 -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/banner1.jpeg" class="responsive">
+					</div>
+					<div class="carousel-item img-responsive">
+						<img src="img/banner2.jpeg" class="responsive">
+					</div>
+					<div class="carousel-item">
+						<img src="img/banner3.jpeg" class="responsive">
+					</div>
+				</div>
+
+				<!-- 左右切换按钮 -->
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+
+
+			</div>
+
+
+			<!--分页tab 展示 【介绍九号管家/加盟流程】-->
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#home">九号管家介绍</a></li>
+  <li><a href="#profile">九号管家加盟</a></li>
+  
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="home">.介绍内容text 图片等..</div>
+  <div class="tab-pane" id="profile">加盟方式流程text 图片等...</div>
+ 
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:first').tab('show');
+  })
+  $('#myTab a').click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+})
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+	</body>
+
+
+
+	<script>
+	//导航js
+	$(function () {
+		$('ul.navbar-nav li:first-child').addClass("active");
+	});
+	// 点击导航栏图标的时候，将点击的当前菜单激活（class设置成“active”）
+	$('ul.navbar-nav li').click(function (e){
+		$('ul.navbar-nav li').removeClass("active");
+		$(this).addClass("active");
+	});
+</script>
+</html>
