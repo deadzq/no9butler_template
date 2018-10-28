@@ -1,0 +1,101 @@
+body {
+  min-height: 2000px;
+}
+.navbar-static-top {
+  margin-bottom: 0;
+}
+.navbar-wrapper {
+  margin-bottom: 19px;
+}
+@media (min-width: 768px) {
+  .navbar-wrapper {
+    position: relative;
+    z-index: 1000;
+  }
+  .navbar-static-top {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    z-index: auto;
+  }
+}
+.dropdown>.animated {
+  animation-duration: 0s;
+}
+@media (min-width: 768px) {
+  .dropdown-menu {
+    z-index: -1;
+  }
+  .dropdown>.animated {
+    animation-duration: .35s;
+  }
+}
+.dropdown-menu {
+  padding: 0;
+  border: 0;
+  margin: 2px 0 0;
+}
+.dropdown-menu>li>ul {
+  padding: 5px 0;
+  list-style: none;
+}
+.dropdown-menu>li>ul>li>a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  white-space: nowrap;
+}
+.dropdown-menu>li>ul>li>a:hover {
+  color: #262626;
+}
+.dropdown-header, .navbar-nav .open .dropdown-menu .dropdown-header, .dropdown-menu>li>ul>li>a, .navbar-nav .open .dropdown-menu>li>ul>li>a {
+  padding: 5px 15px 5px 25px;
+}
+@media (min-width: 768px) {
+  .dropdown-menu>li>ul>li>a:hover {
+    background-color: #f5f5f5;
+  }
+}
+
+/* Custom styles */
+.d-dropdown-menu-styles {
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+}
+.d-dropdown-element-padding {
+  padding: 3px 20px!important;
+}
+
+@media (max-width: 767px) {
+  .navbar-header {
+    position: relative;
+    z-index: 1;
+  }
+  .navbar-header, .navbar-collapse {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  }
+  .dropdown-menu, .navbar-nav .open .dropdown-menu {
+    box-shadow: inset 0 16px 12px -12px rgba(0, 0, 0, .175), inset 0 -16px 12px -12px rgba(0, 0, 0, .175);
+  }
+  .dropdown-menu {
+    background-color: transparent;
+    position: static;
+    float: none;
+    overflow: hidden;
+    height: 0;
+    display: block;
+    transition: height .35s;
+    border-radius: 0;
+  }
+  .dropdown-menu>li>ul>li>a {
+    color: #777;
+  }
+  .dropdown-menu>li>ul>li>a:hover {
+    color: #333;
+  }
+  .open .dropdown-menu {
+    height: auto;
+  }
+  .dropdown-header, .dropdown-menu>li>ul>.divider, .dropdown-menu>li>ul>li>a>div, .navbar-nav .open .dropdown-menu>li>ul>li>a>div {
+    position: relative;
+    z-index: -1;
+  }
+}
